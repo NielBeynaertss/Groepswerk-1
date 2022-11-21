@@ -6,9 +6,13 @@ submitButton.addEventListener('click', function () {
     console.log(city);
     let url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" + city + "?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
     console.log(url);
-    //fetch (url)
-//.then(x => x.text())
-//.then(y => document.getElementById("weather").innerHTML = y);
+    let weather = document.getElementById("weather");
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        weather.innerHTML = data.currentConditions.temp;
+    })
 
 
 
