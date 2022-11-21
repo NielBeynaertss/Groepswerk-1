@@ -1,4 +1,4 @@
-let submitButton = document.getElementById('submitButton');
+let submitButton = document.getElementById('submit');
 
 submitButton.addEventListener('click', function () {
     // fetch van jsonplaceholder API;
@@ -28,6 +28,47 @@ let today = new Date();
         age--;
     }
     console.log(age);
+
+
+
+let bdateyear = birthDate.getFullYear();
+let remainder = bdateyear % 12;
+console.log(remainder);
+if (remainder == 0) {
+
+}
+else if (remainder == 1) {
+
+}
+else if (remainder == 2) {
+    
+}
+else if (remainder == 3) {
+    
+}
+else if (remainder == 4) {
+    
+}
+else if (remainder == 5) {
+    
+}
+else if (remainder == 6) {
+    
+}
+else if (remainder == 7) {
+    
+}
+else if (remainder == 8) {
+    
+}
+else if (remainder == 9) {
+}
+else if (remainder == 10) {
+    
+}
+else if (remainder == 11) {
+    
+}
 });
 
 
