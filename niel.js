@@ -50,43 +50,46 @@ function getData(){
     let horoscope;
 
 
-
+    let animal = ""
     if(remainder == 0){
-        horoscope = "Your Chinese horoscope is Monkey";
+        animal = "monkey";
     }
     else if(remainder == 1){
-        horoscope = "Your Chinese horoscope is Rooster";
+        animal = "rooster";
     }
     else if(remainder == 2){
-        horoscope = "Your Chinese horoscope is Dog";
+        animal = "dog";
     }
     else if(remainder == 3){
-        horoscope = "Your Chinese horoscope is Pig";
+        animal = "pig";
     }
     else if(remainder == 4){
-        horoscope = "Your Chinese horoscope is Rat";
+        animal = "rat";
     }
     else if(remainder == 5){
-        horoscope = "Your Chinese horoscope is Ox";
+        animal = "ox";
     }
     else if(remainder == 6){
-        horoscope = "Your Chinese horoscope is Tiger";
+        animal = "tiger";
     }
     else if(remainder == 7){
-        horoscope = "Your Chinese horoscope is Rabbit";
+        animal = "rabbit";
     }
     else if(remainder == 8){
-        horoscope = "Your Chinese horoscope is Dragon";
+        animal = "dragon";
     }
     else if(remainder == 9){
-        horoscope = "Your Chinese horoscope is Snake";
+        animal = "snake";
     }
     else if(remainder == 10){
-        horoscope = "Your Chinese horoscope is Horse";
+        animal = "horse";
     }
     else if(remainder == 11){
-        horoscope = "Your Chinese horoscope is Goat";
+        animal = "goat";
     }
+    horoscope = "Your Chinese horoscope is " + animal;
+    let picture = animal + '.png'
+    
 
 
     document.getElementById('horoscope').innerHTML = horoscope;
