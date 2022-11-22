@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="city">
+<div id="weather"></div>
+<hr>
+<div id="temp"></div>
+<button id="submit" onclick="apitester()">klik hier</button>
+
+
+
+    <script>
+    function weatherapi() {
+        let city = document.getElementById('city').value;
+        let url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" + city + "?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
+        fetch(url)
+         .then(response => response.json())
+         .then(data => {
+         console.log(data);
+         weather.innerHTML =`
+         <p>Location: ${data.resolvedAddress}</p>
+         <p>Current conditions: ${data.currentConditions.conditions}</p>`;
+         temp.innerHTML =`
+         <p>Temperature: ${data.currentConditions.temp}°C</p>`;
+         }).catch(
+         err => {
+         alert("Wrong city name");
+         console.log(err)});
+        }
+        </script> 
+</body>
+</html>
+
