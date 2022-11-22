@@ -99,4 +99,20 @@ function getData(){
 
 }
 
-
+function weatherapi() {
+    let city = document.getElementById('city').value;
+    let url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" + city + "?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
+    fetch(url)
+     .then(response => response.json())
+     .then(data => {
+     console.log(data);
+     weatherInfo.innerHTML =`
+     <p>Location: ${data.resolvedAddress}</p>
+     <p>Current conditions: ${data.currentConditions.conditions}</p>`;
+     weather.innerHTML =`
+     <p>Temperature: ${data.currentConditions.temp}°C</p>`;
+     }).catch(
+     err => {
+     alert("Wrong city name");
+     console.log(err)});
+    }
