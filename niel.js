@@ -46,6 +46,7 @@ function getData(){
 
     let year = data1.birthyear;
     let remainder = year % 12;
+    let elementrem = year % 10;
     console.log(remainder);
     let horoscope;
 
@@ -87,7 +88,26 @@ function getData(){
     else if(remainder == 11){
         animal = "goat";
     }
-    horoscope = "Your Chinese horoscope is " + animal;
+
+    let element;
+    if (elementrem == 0 || elementrem == 1) {
+        element = "Metal"
+    }
+    else if (elementrem == 2 || elementrem == 3) {
+        element = "Water"
+    }
+    else if (elementrem == 4 || elementrem == 5) {
+        element = "Wood"
+    }
+    else if (elementrem == 6 || elementrem == 7) {
+        element = "Fire"
+    }
+    else if (elementrem == 8 || elementrem == 9) {
+        element = "Earth"
+    }
+    
+
+    horoscope = "Your Chinese horoscope is " + element + " " + animal;
     let picture = animal + '.png'
     document.getElementById('animal_pic').src = picture;
 
