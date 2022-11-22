@@ -1,25 +1,64 @@
-.animate__backInDown{
+body{/*Background of website*/
+    background-image: url('testtt.jpg'); 
+    background-size: cover;
+}
+.margininputs{/*Add some margin to input fields*/
+    margin: 0 0 20px 0;
+}
+.marginBottoms{/*Margin for last element of page, fixes overlapping footer*/
+    margin-bottom: 200px;
+}
+.animate__backInDown{/*Time it takes for logo animation*/
     --animate-duration: 3s;
 }
-.row{
-    margin-top: 50px !important;
-    padding-bottom: 20px !important;
+.rowmargin{/*Add some margin to rows*/
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
 }
-.footer{
-    background-color: rgba(0, 0, 0, 0.441);
+.rowpadding{/*Add some padding to rows*/
+    padding: 10px 0;
+}
+.blockpadding{/*Add some padding to block for style*/
+    padding: 20px;
+}
+.footer{/*Footer design*/
+    background-color: rgba(255, 255, 255, 0.66);
     height: 50px;
 }
-.input{
+.input{/*Styling of input fields*/
     width: 200px;
     height: 50px;
     border-radius: 15px;
     padding: 5px;
 }
-.button{
-    width: 200px;
+.button{/*Styling of buttons*/
+    width: 100px;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 15px;    
 }
-.animal_pic {
-    height: 100px;
+.block{/*Section blocks 2nd page, adds some variation*/
+    background-color: rgba(255, 255, 255, 0.66);
+    border-radius: 50px;
+}
+.img{/*Margin for image*/
+    margin: 10px 0;
+}
+.weatherfont{/*Font for temp display*/
+    font-family: 'lobster', cursive;
+    font-size: 3rem;
+}
+.zoom:hover {/*Transformation of sections (temp, horoscope picture)*/
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    transition: .7s;
+}
+
+@media only screen and (max-width: 800px) {/*Make hover effect go away on small screen*/
+    .zoom:hover{
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari 3-8 */
+        transform: scale(1); 
+        transition: .7s;
+    }
 }
