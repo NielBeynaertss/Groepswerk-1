@@ -116,6 +116,30 @@ function getData(){
     console.log(horoscope);
 
 
+let MonkeyArr = [
+
+]
+let RoosterArr = [
+    "Roosters are serious in their work",
+    "Roosters are straightforward and decisive in their actions",
+    "Roosters will directly criticize what they see unfit and are perfectionists",
+    "Roosters are logical and good at managing teams",
+    "No matter how difficult something is, Roosters will not give up"
+]
+let DogArr = [
+    "Dogs' most defining characteristic is their loyalty",
+    "Honest and just, Dogs are popular in social circles",
+    "Dogs will never abandon their friends, family or work",
+    "Everyone needs a Dog friend for advice and help",
+    "Dogs are good at helping others find and fix their bad habits"
+]
+let TigerArr = [
+    "Tigers are fiercely independent and possess strong self-esteem",
+    "Tigers like to act alone and are not very gregarious",
+    "Tigers are most likely optimistic and enthusiastic by nature, and always seem to have endless energy, especially at work",
+    "Tiger's energetic presence and intense eyes are the greatest charm of Tiger natives",
+    "Tiger's vitality is apparent to anyone at a glance, and people are instinctively drawn to this larger than life quality in them"]
+
 
     
     console.log('we got here');
