@@ -89,7 +89,7 @@ function getData(){
     }
     horoscope = "Your Chinese horoscope is " + animal;
     let picture = animal + '.png'
-    
+    document.getElementById('animal_pic').src = picture;
 
 
     document.getElementById('horoscope').innerHTML = horoscope;
