@@ -118,27 +118,49 @@ function getData(){
 
 let MonkeyArr = [
 
-]
+];
 let RoosterArr = [
     "Roosters are serious in their work",
     "Roosters are straightforward and decisive in their actions",
     "Roosters will directly criticize what they see unfit and are perfectionists",
     "Roosters are logical and good at managing teams",
     "No matter how difficult something is, Roosters will not give up"
-]
+];
 let DogArr = [
     "Dogs' most defining characteristic is their loyalty",
     "Honest and just, Dogs are popular in social circles",
     "Dogs will never abandon their friends, family or work",
     "Everyone needs a Dog friend for advice and help",
     "Dogs are good at helping others find and fix their bad habits"
-]
+];
+let PigArr = [
+    "Pigs are very realistic",
+    "Others may be all talk and no action, but Pigs are the opposite",
+    "Though not wasteful spenders, Pigs will let themselves enjoy life",
+    "Pigs love entertainment and will occasionally treat themselves",
+    "Pigs are a bit materialistic, but this is motivation for them to work hard"
+];
+let RatArr = [
+    "Optimistic and energetic, Rats are likable by all",
+    "Rats are sensitive to other's emotions but are stubborn with your opinion",
+    "Rat's personality is kind, but due to weak communication skills, their words may seem impolite and rude",
+    "On the financial side, Rats like saving and can be stingy",
+    "Rat's love for hoarding will sometimes cause them to waste money on unnecessary things"
+];
+let OxArr = [
+    "Oxen are honest and earnest",
+    "Oxen are low key and never look for praise or to be the center of attention",
+    "Oxen gain recognition through their hard work",
+    "Oxen believe that everyone should do what's asked for them and stay within their bounds",
+    "Rarely losing their temper, Oxen think logically and make great leaders"
+];
 let TigerArr = [
     "Tigers are fiercely independent and possess strong self-esteem",
     "Tigers like to act alone and are not very gregarious",
     "Tigers are most likely optimistic and enthusiastic by nature, and always seem to have endless energy, especially at work",
     "Tiger's energetic presence and intense eyes are the greatest charm of Tiger natives",
-    "Tiger's vitality is apparent to anyone at a glance, and people are instinctively drawn to this larger than life quality in them"]
+    "Tiger's vitality is apparent to anyone at a glance, and people are instinctively drawn to this larger than life quality in them"
+];
 
 
     
