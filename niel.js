@@ -117,7 +117,11 @@ function getData(){
 
 
 let MonkeyArr = [
-
+    "Monkeys' most defining trait is their intelligence",
+    "Monkeys gain professional recognition and make great leaders",
+    "Monkeys are calm and logical thinkers",
+    "Monkeys view everyone as teachers",
+    "Monkeys are willing to listen to critique and learn from their mistakes"
 ];
 let RoosterArr = [
     "Roosters are serious in their work",
@@ -169,10 +173,18 @@ let RabbitArr = [
     "They are socializers with an attractive aura, however, they find it hard to open up to others and often turn to escapism"
 ];
 let DragonArr = [
-    "Dragons are strong and independent figures, but they yearn for support and love"
+    "Dragons are strong and independent figures, but they yearn for support and love",
+    "Adventurous entrepreneurs at heart, Dragons dream of shooting to fame",
+    "Dragons will never slack off on responsibilities nor be unnecessarily suspicious",
+    "Dragons are serious in what they do and have high self-esteems",
+    "The only thing Dragons require of others is respect"
 ];
 let SnakeArr = [
-
+    "Snakes are humorous and sophisticated",
+    "Snakes don't like small talk or thinking about small everyday problems",
+    "In a chaotic environment, Snakes are the eye of the storm",
+    "Snakes are able to hold their ground and calmly think of solutions",
+    "Snakes are usually correct, but this also comes from a distrust of other"
 ];
 let HorseArr = [
     "Horses are full of energy, albeit a bit too much",
