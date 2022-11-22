@@ -53,40 +53,40 @@ function getData(){
 
     let animal = ""
     if(remainder == 0){
-        animal = "monkey";
+        animal = "Monkey";
     }
     else if(remainder == 1){
-        animal = "rooster";
+        animal = "Rooster";
     }
     else if(remainder == 2){
-        animal = "dog";
+        animal = "Dog";
     }
     else if(remainder == 3){
-        animal = "pig";
+        animal = "Pig";
     }
     else if(remainder == 4){
-        animal = "rat";
+        animal = "Rat";
     }
     else if(remainder == 5){
-        animal = "ox";
+        animal = "Ox";
     }
     else if(remainder == 6){
-        animal = "tiger";
+        animal = "Tiger";
     }
     else if(remainder == 7){
-        animal = "rabbit";
+        animal = "Rabbit";
     }
     else if(remainder == 8){
-        animal = "dragon";
+        animal = "Dragon";
     }
     else if(remainder == 9){
-        animal = "snake";
+        animal = "Snake";
     }
     else if(remainder == 10){
-        animal = "horse";
+        animal = "Horse";
     }
     else if(remainder == 11){
-        animal = "goat";
+        animal = "Goat";
     }
 
     let element;
