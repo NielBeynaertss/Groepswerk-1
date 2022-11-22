@@ -161,8 +161,33 @@ let TigerArr = [
     "Tiger's energetic presence and intense eyes are the greatest charm of Tiger natives",
     "Tiger's vitality is apparent to anyone at a glance, and people are instinctively drawn to this larger than life quality in them"
 ];
+let RabbitArr = [
+    "To outsiders, the Rabbit's kindness may make them seem soft and weak",
+    "Rabbit's quiet personality hides their confidence and strength",
+    "Rabbits are steadily moving towards their goal, no matter what negativity the others give them",
+    "With their good reasoning skills and attention to detail, they make great scholars",
+    "They are socializers with an attractive aura, however, they find it hard to open up to others and often turn to escapism"
+];
+let DragonArr = [
+    "Dragons are strong and independent figures, but they yearn for support and love"
+];
+let SnakeArr = [
 
-
+];
+let HorseArr = [
+    "Horses are full of energy, albeit a bit too much",
+    "Both studious and athletic, Horses are strong believers of chasing after dreams",
+    "Rather than wealth and fame, happiness is what motivates Horses",
+    "Horses expect others to operate at the same speed as them and don't understand why others can't",
+    "Horses' biggest fault is that they're blind to their own faults"
+];
+let GoatArr = [
+    "Goats are able to persevere through any difficulty",
+    "Goats are strong and resilient, though their gentleness might be misleading",
+    "Goats have high tolerance and motivation",
+    "Quiet observers, Goats consider all aspects of anything before deciding",
+    "Goats never act brashly and are able to complete tasks successfully"
+];
     
     console.log('we got here');
     //let city = document.getElementById('city').value;
