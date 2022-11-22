@@ -96,8 +96,9 @@ function getData(){
 
     
     console.log('we got here');
-    let city = document.getElementById('city').value;
-    let url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" + city + "?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
+    //let city = document.getElementById('city').value;
+    //console.log(city);
+    let url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/brussels?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
     fetch(url)
      .then(response => response.json())
      .then(data => {
