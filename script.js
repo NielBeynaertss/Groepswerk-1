@@ -9,6 +9,7 @@ function storeData(){
     let birth_date = document.getElementById('date').value;
     let d = new Date(birth_date);
     let birth_year = d.getFullYear();
+    let city = document.getElementById('city').value;
 
     let today = new Date();
     let todayDate = today.getFullYear();
@@ -22,7 +23,8 @@ function storeData(){
     let data = {
         name: name,
         age: age,
-        birthyear: birth_year
+        birthyear: birth_year,
+        city: city
     }
 
     window.localStorage.setItem('key', JSON.stringify(data));
@@ -220,20 +222,53 @@ function getData(){
 
 
 //Weather functionality
-    //let city = document.getElementById('city').value;
-    //console.log(city);
-    let url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/brussels?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
+    let city = data1.city;
+    console.log(city);
+    let url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" + city + "?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
     fetch(url)
-     .then(response => response.json())
-     .then(data => {
-     console.log(data);
-     weatherInfo.innerHTML =`
-     <span>Location: ${data.resolvedAddress}</span>
-     <span>Current conditions: ${data.currentConditions.conditions}</span>`;
-     weather.innerHTML =`
-     <span>${data.currentConditions.temp}°C</span>`;
-     }).catch(
-     err => {
-     alert("Wrong city name");
-     console.log(err)});
+    .then(response => response.json())
+    .then(data => {
+    console.log(data);
+    weatherInfo.innerHTML =`
+    <span>Location: ${data.resolvedAddress}</span>
+    <span>Current conditions: ${data.currentConditions.conditions}</span>`;
+    weather.innerHTML =`
+    <span>${data.currentConditions.temp}°C</span>`;
+    APItoHTML(data.currentConditions.conditions);
+    }).catch(
+    err => {
+    alert("Wrong city name");
+    console.log(err)});
+}
+
+function APItoHTML(info) {
+    console.log(info);
+    if (info.includes("Overcast")) {
+        document.getElementById('weatherpic').src = 
+        "https://media.giphy.com/media/l0HlQdk8kI9KIOjBe/giphy.gif";
+    }
+    if (info.includes("Rain")) {
+        document.getElementById('weatherpic').src = 
+        "https://media.giphy.com/media/3og0IOUWB5AZoP6la0/giphy.gif";
+    }
+    if (info.includes("Partially cloudy")) {
+        document.getElementById('weatherpic').src =
+        "https://media.giphy.com/media/l0HlQdk8kI9KIOjBe/giphy.gif";
+    }
+    if (info.includes("Snow")) {
+        document.getElementById('weatherpic').src = 
+        "https://media.giphy.com/media/Xi2Xu0MejhsUo/giphy.gif";
+    }
+    if (info.includes("Clear")) {
+        document.getElementById('weatherpic').src = 
+        "https://media.giphy.com/media/1Fm7jEapE18HwS6fkT/giphy.gif";
+    }
+    if (info.includes("Hail")) {
+        document.getElementById('weatherpic').src = 
+        "https://media.giphy.com/media/xTiTnGmU99wLFvZBfy/giphy.gif";
+    }
+    if (info.includes("Thunderstorm")) {
+        document.getElementById('weatherpic').src =
+        "https://media.giphy.com/media/3osxYzIQRqN4DOEddC/giphy.gif"
+    }
 }
