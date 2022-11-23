@@ -1,4 +1,4 @@
-//return to index page when button clicked
+//Return to index page when button clicked
 function again(){
     window.location.href = 'index.html';
 }
@@ -44,8 +44,7 @@ function getData(){
     console.log(data1); 
 
     
-//chinese horoscope section
-
+//Chinese horoscope section
     let year = data1.birthyear;
     let remainder = year % 12;
     let elementrem = year % 10;
@@ -137,7 +136,7 @@ function getData(){
         "Goats never act brashly and are able to complete tasks successfully"
     ];
 
-
+//Calculate zodiac animal & quote based on 12-year loop
     let animal = ""
     let animalArr;
     if(remainder == 0){
@@ -189,6 +188,7 @@ function getData(){
         animalArr = GoatArr;
     }
 
+//Calculate zodiac element based on 10 year loop
     let element;
     if (elementrem == 0 || elementrem == 1) {
         element = "Metal"
@@ -206,7 +206,7 @@ function getData(){
         element = "Earth"
     }
     
-
+//Display horoscope sections on result page
     horoscope = "Your Chinese horoscope is " + element + " " + animal;
     let picture = animal + '.png'
     document.getElementById('animal_pic').src = picture;
@@ -214,14 +214,15 @@ function getData(){
 
     document.getElementById('horoscope').innerHTML = horoscope;
     console.log(horoscope);
-
+    
+//Random number generator to get a random quote
     console.log(animal + " is animal");
     console.log(animalArr);
     let randomNum = Math.floor(Math.random() * 5);
     document.getElementById("horoscope_quote").innerHTML = animalArr[randomNum];
 
 
-//Weather functionality
+//Fetch API based on city & get right info from it
     let city = data1.city;
     console.log(city);
     let url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" + city + "?unitGroup=metric&include=current&key=P9J7ZGZ9SBGSZQTDBMT86WNN3&contentType=json";
@@ -241,6 +242,7 @@ function getData(){
     console.log(err)});
 }
 
+//Show gif based on API info
 function APItoHTML(info) {
     console.log(info);
     if (info.includes("Overcast")) {
